@@ -1,1 +1,15 @@
-متوقفه لغرض صيانه
+def VERSION():
+    1.0
+def m2():
+    ua  = "[FBAN/Orca-Android;FBAV/" + str(random.randint(196,214)) + ".0.0." + str(random.randrange(33,66)) + ";FBBV/" + str(random.randint(111111111,999999999)) + ";[FBAN/Orca-Android;FBAV/137.50.75.81;FBPN/com.facebook.orca;FBLC/en_US;FBBV/22062473;FBCR/T-Mobile;FBMF/Realme;FBBD/Realme;FBDV/GALAXY S24 ULTRA;FBSV/9.2;FBCA/arm64-v8a;FBDM/{density=3.7,width=979,height=1744};FB_FW/1;FBRV/71559308]"
+    return ua
+password = "blak"  # كلمة السر الصحيحة
+
+while True:
+  user_password = input("أدخل كلمة السر: ")  # طلب كلمة السر من المستخدم
+
+  if user_password == password:
+    print("تم تسجيل الدخول بنجاح!")
+    break  # الخروج من الحلقة إذا كانت كلمة السر صحيحة
+  else:
+    print("كلمة السر خاطئة. حاول مرة أخرى.")
